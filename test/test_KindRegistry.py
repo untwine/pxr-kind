@@ -3,13 +3,13 @@
 # Licensed under the terms set forth in the LICENSE.txt file available at
 # https://openusd.org/license.
 
-from pxr import Gf, Tf, Kind, Plug
+from pxr import Tf, Kind, Plug
 import os, unittest, shutil
 
 class TestKindRegistry(unittest.TestCase):
     def test_Basic(self):
         # Register python module plugins
-        Plug.Registry().RegisterPlugins(os.getcwd() + "/**/")
+        Plug.Registry().RegisterPlugins(os.environ.get("PLUGINS_PATH"))
 
         reg = Kind.Registry()
         self.assertTrue(reg)
