@@ -1,25 +1,25 @@
-//
 // Copyright 2016 Pixar
 //
 // Licensed under the terms set forth in the LICENSE.txt file available at
 // https://openusd.org/license.
 //
-#ifndef PXR_USD_KIND_REGISTRY_H
-#define PXR_USD_KIND_REGISTRY_H
+// Modified by Jeremy Retailleau.
+
+#ifndef PXR_KIND_REGISTRY_H
+#define PXR_KIND_REGISTRY_H
 
 /// \file kind/registry.h
 
-#include "pxr/pxr.h"
-#include "pxr/usd/kind/api.h"
-#include "pxr/base/tf/weakBase.h"
-#include "pxr/base/tf/singleton.h"
-#include "pxr/base/tf/staticTokens.h"
-#include "pxr/base/tf/token.h"
+#include "./api.h"
+#include <pxr/tf/weakBase.h>
+#include <pxr/tf/singleton.h>
+#include <pxr/tf/staticTokens.h>
+#include <pxr/tf/token.h>
 
 #include <unordered_map>
 #include <vector>
 
-PXR_NAMESPACE_OPEN_SCOPE
+namespace pxr {
 
 /// \hideinitializer
 #define KIND_TOKENS \
@@ -130,6 +130,6 @@ private:
 
 KIND_API_TEMPLATE_CLASS(TfSingleton<KindRegistry>);
 
-PXR_NAMESPACE_CLOSE_SCOPE
+}  // namespace pxr
 
-#endif // PXR_USD_KIND_REGISTRY_H
+#endif // PXR_KIND_REGISTRY_H

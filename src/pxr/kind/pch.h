@@ -1,15 +1,12 @@
-//
 // Copyright 2017 Pixar
 //
 // Licensed under the terms set forth in the LICENSE.txt file available at
 // https://openusd.org/license.
 //
-// WARNING: THIS FILE IS GENERATED.  DO NOT EDIT.
-//
+// Modified by Jeremy Retailleau.
 
 #define TF_MAX_ARITY 7
-#include "pxr/pxr.h"
-#include "pxr/base/arch/defines.h"
+#include <pxr/arch/defines.h>
 #if defined(ARCH_OS_LINUX)
 #include <unistd.h>
 #endif
@@ -52,5 +49,5 @@
 #include <utility>
 #include <vector>
 #ifdef PXR_PYTHON_SUPPORT_ENABLED
-#include "pxr/base/tf/pySafePython.h"
+#include <pxr/tf/pySafePython.h>
 #endif // PXR_PYTHON_SUPPORT_ENABLED

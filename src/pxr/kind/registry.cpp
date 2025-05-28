@@ -1,19 +1,18 @@
-//
 // Copyright 2016 Pixar
 //
 // Licensed under the terms set forth in the LICENSE.txt file available at
 // https://openusd.org/license.
 //
+// Modified by Jeremy Retailleau.
 
-#include "pxr/pxr.h"
-#include "pxr/usd/kind/registry.h"
-#include "pxr/base/plug/plugin.h"
-#include "pxr/base/plug/registry.h"
-#include "pxr/base/tf/instantiateSingleton.h"
-#include "pxr/base/tf/iterator.h"
-#include "pxr/base/tf/stringUtils.h"
+#include "./registry.h"
+#include <pxr/plug/plugin.h>
+#include <pxr/plug/registry.h>
+#include <pxr/tf/instantiateSingleton.h>
+#include <pxr/tf/iterator.h>
+#include <pxr/tf/stringUtils.h>
 
-PXR_NAMESPACE_OPEN_SCOPE
+namespace pxr {
 
 TF_INSTANTIATE_SINGLETON(KindRegistry);
 TF_DEFINE_PUBLIC_TOKENS(KindTokens, KIND_TOKENS);
@@ -238,4 +237,4 @@ KindRegistry::_RegisterDefaults()
     }
 }
 
-PXR_NAMESPACE_CLOSE_SCOPE
+}  // namespace pxr

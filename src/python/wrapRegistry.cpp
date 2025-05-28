@@ -1,20 +1,19 @@
-//
 // Copyright 2016 Pixar
 //
 // Licensed under the terms set forth in the LICENSE.txt file available at
 // https://openusd.org/license.
 //
+// Modified by Jeremy Retailleau.
 
-#include "pxr/pxr.h"
-#include "pxr/usd/kind/registry.h"
-#include "pxr/base/tf/pyResultConversions.h"
-#include "pxr/base/tf/pySingleton.h"
+#include <pxr/kind/registry.h>
+#include <pxr/tf/pyResultConversions.h>
+#include <pxr/tf/pySingleton.h>
 
-#include "pxr/external/boost/python.hpp"
+#include <pxr/boost/python.hpp>
 
-PXR_NAMESPACE_USING_DIRECTIVE
+using namespace pxr;
 
-using namespace pxr_boost::python;
+using namespace pxr::boost::python;
 
 void wrapRegistry()
 {

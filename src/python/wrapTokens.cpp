@@ -1,15 +1,14 @@
-//
 // Copyright 2016 Pixar
 //
 // Licensed under the terms set forth in the LICENSE.txt file available at
 // https://openusd.org/license.
 //
+// Modified by Jeremy Retailleau.
 
-#include "pxr/pxr.h"
-#include "pxr/usd/kind/registry.h"
-#include "pxr/base/tf/pyStaticTokens.h"
+#include <pxr/kind/registry.h>
+#include <pxr/tf/pyStaticTokens.h>
 
-PXR_NAMESPACE_USING_DIRECTIVE
+using namespace pxr;
 
 void wrapTokens()
 {
