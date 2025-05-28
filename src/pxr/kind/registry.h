@@ -9,17 +9,17 @@
 
 /// \file kind/registry.h
 
-#include "pxr/pxr.h"
-#include "pxr/usd/kind/api.h"
-#include "pxr/base/tf/weakBase.h"
-#include "pxr/base/tf/singleton.h"
-#include "pxr/base/tf/staticTokens.h"
-#include "pxr/base/tf/token.h"
+#include <pxr/kind/pxr.h>
+#include <pxr/kind/api.h>
+#include <pxr/tf/weakBase.h>
+#include <pxr/tf/singleton.h>
+#include <pxr/tf/staticTokens.h>
+#include <pxr/tf/token.h>
 
 #include <unordered_map>
 #include <vector>
 
-PXR_NAMESPACE_OPEN_SCOPE
+KIND_NAMESPACE_OPEN_SCOPE
 
 /// \hideinitializer
 #define KIND_TOKENS \
@@ -128,6 +128,6 @@ private:
     _KindMap _kindMap;
 };
 
-PXR_NAMESPACE_CLOSE_SCOPE
+KIND_NAMESPACE_CLOSE_SCOPE
 
 #endif // PXR_USD_KIND_REGISTRY_H

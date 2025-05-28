@@ -5,11 +5,11 @@
 // https://openusd.org/license.
 //
 
-#include "pxr/pxr.h"
-#include "pxr/usd/kind/registry.h"
-#include "pxr/base/tf/pyStaticTokens.h"
+#include <pxr/kind/pxr.h>
+#include <pxr/kind/registry.h>
+#include <pxr/tf/pyStaticTokens.h>
 
-PXR_NAMESPACE_USING_DIRECTIVE
+KIND_NAMESPACE_USING_DIRECTIVE
 
 void wrapTokens()
 {

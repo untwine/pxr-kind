@@ -8,8 +8,8 @@
 //
 
 #define TF_MAX_ARITY 7
-#include "pxr/pxr.h"
-#include "pxr/base/arch/defines.h"
+#include <pxr/kind/pxr.h>
+#include <pxr/arch/defines.h>
 #if defined(ARCH_OS_LINUX)
 #include <unistd.h>
 #endif
@@ -54,5 +54,5 @@
 #include <variant>
 #include <vector>
 #ifdef PXR_PYTHON_SUPPORT_ENABLED
-#include "pxr/base/tf/pySafePython.h"
+#include <pxr/tf/pySafePython.h>
 #endif // PXR_PYTHON_SUPPORT_ENABLED

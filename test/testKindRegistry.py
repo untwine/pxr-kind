@@ -1,5 +1,3 @@
-#!/pxrpythonsubst
-#
 # Copyright 2017 Pixar
 #
 # Licensed under the terms set forth in the LICENSE.txt file available at

@@ -7,7 +7,7 @@
 #ifndef PXR_USD_KIND_API_H
 #define PXR_USD_KIND_API_H
 
-#include "pxr/base/arch/export.h"
+#include <pxr/arch/export.h>
 
 #if defined(PXR_STATIC)
 #   define KIND_API

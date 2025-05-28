@@ -5,15 +5,15 @@
 // https://openusd.org/license.
 //
 
-#include "pxr/pxr.h"
-#include "pxr/usd/kind/registry.h"
-#include "pxr/base/plug/plugin.h"
-#include "pxr/base/plug/registry.h"
-#include "pxr/base/tf/instantiateSingleton.h"
-#include "pxr/base/tf/iterator.h"
-#include "pxr/base/tf/stringUtils.h"
+#include <pxr/kind/pxr.h>
+#include <pxr/kind/registry.h>
+#include <pxr/plug/plugin.h>
+#include <pxr/plug/registry.h>
+#include <pxr/tf/instantiateSingleton.h>
+#include <pxr/tf/iterator.h>
+#include <pxr/tf/stringUtils.h>
 
-PXR_NAMESPACE_OPEN_SCOPE
+KIND_NAMESPACE_OPEN_SCOPE
 
 TF_INSTANTIATE_SINGLETON(KindRegistry);
 TF_DEFINE_PUBLIC_TOKENS(KindTokens, KIND_TOKENS);
@@ -238,4 +238,4 @@ KindRegistry::_RegisterDefaults()
     }
 }
 
-PXR_NAMESPACE_CLOSE_SCOPE
+KIND_NAMESPACE_CLOSE_SCOPE

@@ -5,10 +5,10 @@
 // https://openusd.org/license.
 //
 
-#include "pxr/pxr.h"
-#include "pxr/base/tf/pyModule.h"
+#include <pxr/kind/pxr.h>
+#include <pxr/tf/pyModule.h>
 
-PXR_NAMESPACE_USING_DIRECTIVE
+KIND_NAMESPACE_USING_DIRECTIVE
 
 TF_WRAP_MODULE
 {
